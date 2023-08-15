@@ -21,14 +21,14 @@ function Child({ list ,onRemoveItem }) {
   return (
     <div className="child">
       <h1>Child Component</h1>
-      <ul className="listItem">
+      {/* <ul className="listItem"> */}
         {list.map((item, index) => (
           <li key={index}>
             {item.name} - ${item.price}
             <button onClick={() => onRemoveItem(index)}>Remove</button>
           </li>
         ))}
-      </ul>
+      {/* </ul> */}
     </div>
   );
 }
